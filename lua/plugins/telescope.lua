@@ -1,4 +1,5 @@
 return {
+  {
   "nvim-telescope/telescope.nvim",
   keys = {
     -- disable the keymap to grep files
@@ -8,4 +9,12 @@ return {
     -- add a keymap to browse plugin files
     
   },
+
+  },
+
+
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+
+  }
 }
