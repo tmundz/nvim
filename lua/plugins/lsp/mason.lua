@@ -51,7 +51,7 @@ function M.config()
             "gopls",
             "pyright",
             "rust_analyzer",
-            "sumneko_lua",
+            --"sumneko_lua",
             "tsserver",
             "yamlls",
         },
@@ -83,11 +83,11 @@ function M.config()
             require("lspconfig").jsonls.setup(jsonls_opts_ext)
         end,
 
-        ["sumneko_lua"] = function()
+        --[[["sumneko_lua"] = function()
             local sumneko_lua_opts = require("plugins.lsp.settings.sumneko_lua")
             local sumneko_lua_opts_ext = vim.tbl_deep_extend("force", sumneko_lua_opts, opts)
             require("lspconfig").sumneko_lua.setup(sumneko_lua_opts_ext)
-        end,
+        end,]]--
 
         ["bashls"] = function()
             local bash_opts = require("plugins.lsp.settings.bash")
