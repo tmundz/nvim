@@ -13,7 +13,6 @@ require("config.options")
 require("config.keymaps")
 require("lazy").setup("plugins")
 
-
 local defaults = {
   -- colorscheme can be a string like `catppuccin` or a function that will load the colorscheme
   ---@type string|fun()
